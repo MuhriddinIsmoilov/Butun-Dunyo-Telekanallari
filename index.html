@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Famelack Web Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <!-- Sidebar / Navigatsiya -->
+  <aside class="sidebar">
+    <div class="logo">
+      <i class="fa-solid fa-play"></i>
+      <span>StreamHub</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="active"><i class="fa-solid fa-tv"></i> Direct TV</a>
+      <a href="#"><i class="fa-solid fa-radio"></i> Radio</a>
+      <a href="#"><i class="fa-solid fa-compass"></i> Explore</a>
+      <a href="#"><i class="fa-solid fa-gear"></i> Sozlamalar</a>
+    </nav>
+  </aside>
+
+  <!-- Asosiy Kontent -->
+  <main class="main-content">
+    <header class="top-bar">
+      <h1>Famelack Live Portal</h1>
+      <div class="status-badge">
+        <span class="live-dot"></span> LIVE NOW
+      </div>
+    </header>
+
+    <!-- Shaffof Shisha (Glass) Window -->
+    <div class="glass-container">
+      <div class="glass-header">
+        <div class="window-buttons">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="url-bar">
+          <i class="fa-solid fa-lock"></i>
+          <span>https://famelack.com</span>
+        </div>
+      </div>
+
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://famelack.com" 
+          title="Famelack Media Stream" 
+          allow="autoplay; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
